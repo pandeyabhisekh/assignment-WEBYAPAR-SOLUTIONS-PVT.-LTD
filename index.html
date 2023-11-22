@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Gallery</title>
+</head>
+<body bgcolor="#pink">
+  <div class="container mt-5">
+    <h2 class="mb-4">Image Gallery</h2>
+    
+    <!-- Image Upload Form -->
+    <form id="uploadForm">
+      <div class="form-group">
+        <input type="file" class="form-control-file" id="imageInput" accept="image/*" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Upload Image</button>
+    </form>
+    
+    <!-- Image Gallery -->
+    <div id="imageGallery" class="mt-4"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
